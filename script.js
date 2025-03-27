@@ -8,6 +8,8 @@ const empty = document.getElementById('empty');
 const containRes = document.getElementById('res');
 const monthRep = document.getElementById('monthRep');
 const repOve = document.getElementById('repOve');
+const a = document.getElementById('1');
+const b = document.getElementById('2')
 
 const juros = (mont, juros, tempo) => {
     return mont/Math.pow((1+(juros/100)), tempo)
@@ -15,7 +17,6 @@ const juros = (mont, juros, tempo) => {
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-
     monthRep.textContent = 
     repOve.textContent = juros(mortAmo, inteRat, mortTer).toFixed(2)
 

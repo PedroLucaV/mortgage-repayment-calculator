@@ -253,6 +253,11 @@ body{
     border: var(--Lime) 1px solid;
 }
 
+.rdSelect{
+    background-color: hsl(61, 70%, 52%, 30%);
+    border: var(--Lime) 1px solid;
+}
+
 .result{
     width: 50%;
     height: 100%;
@@ -333,7 +338,7 @@ body{
 }
 
 .containRes>.up h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--Lime);
 }
 
