@@ -54,11 +54,31 @@
         </form>
     </div>
     <div id="result" class="result">
-      <img src="./assets/images/illustration-empty.svg" alt="">
-      <h1>Results shown here</h1>
-      <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+      <div id='empty' class="empty">
+        <img src="./assets/images/illustration-empty.svg" alt="">
+        <h1>Results shown here</h1>
+        <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+      </div>
+      <div id="res" class="res">
+      <div class="header">
+        <h1>Your results</h1>
+        <p>Your results are shown below based on the information you provided. 
+          To adjust the results, edit the form and click “calculate repayments” again.</p>
+      </div>
+      <div id="containRes" class="containRes">
+        <div class="up">
+          <p>Your monthly repayments</p>
+          <h1>&pound; <span id="monthRep">a</span></h1>
+        </div>
+        <hr>
+        <div class="down">
+          <p>Total you'll repay over the term</p>
+          <h2>&pound; <span id="repOve"></span></h2>
+        </div>
+      </div>
     </div>
   </div>
+    </div>
   
    <script defer src="./script.js"></script>
 </body>
