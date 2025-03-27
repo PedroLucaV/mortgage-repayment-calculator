@@ -15,12 +15,12 @@
           <p>Clear All</p>
         </div>
 
-        <form class="form" action="">
+        <form id="form" class="form" action="">
           <div class="mA">
             <label for="mortageAmount">Mortgage Amount</label>
             <div>
               <input type="number" name="mortageAmount" >
-              <div>
+              <div class="m">
                 <p>&pound;</p>
               </div>
             </div>
@@ -47,10 +47,10 @@
           </span>
           <div class="rdD">
             <label for="mortageType">Mortage Type</label>
-            <div class="rdIn"><input class="inp" type="radio" name="mortageType" > <p>Repayment</p></div>
-            <div class="rdIn"><input type="radio" name="mortageType" > <p>Interest Only</p></div>
+            <div class="rdIn"><input checked class="inp" type="radio" name="mortageType" > <p>Repayment</p></div>
+            <div class="rdIn"><input class="inp" type="radio" name="mortageType" > <p>Interest Only</p></div>
           </div>
-          <button class="submit"><img class="calc" src="./assets/images/icon-calculator.svg" alt=""><p>Calculate Repayments</p></button>
+          <button id='btn' class="submit"><img class="calc" src="./assets/images/icon-calculator.svg" alt=""><p>Calculate Repayments</p></button>
         </form>
     </div>
     <div class="result"></div>

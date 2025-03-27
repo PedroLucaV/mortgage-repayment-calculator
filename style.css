@@ -31,7 +31,7 @@ p{
 
 input{
     height: 3rem;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1rem;
     font-weight: 700;
     border: 1px solid var(--Slate-300);
@@ -116,7 +116,7 @@ body{
 }
 
 .mA>div>div{
-    border-radius: 5px 0 0 5px;
+    border-radius: 10px 0 0 10px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -127,6 +127,17 @@ body{
     height: 3rem;
     font-weight: 700;
     min-width: 3rem;
+}
+
+.mA div:hover, .mA>div input:hover~.m, .mA>div input:focus~.m{
+    background-color: var(--Lime);
+    border-radius: 10px 0 0 10px;
+    border: var(--Lime);
+}
+
+.mA>div input:hover, .mA>div input:focus{
+    border: 1px solid var(--Lime);
+    border-radius: 10px;
 }
 
 .mA>div>div>p{
@@ -161,7 +172,7 @@ body{
 }
 
 .y{
-    border-radius: 5px;
+    border-radius: 10px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -173,6 +184,17 @@ body{
     font-weight: 700;
     padding: 0 1rem;
     min-width: 3rem;
+}
+
+.y:hover, .as input:hover~.y, .as input:focus~.y{
+    background-color: var(--Lime);
+    border-radius: 0 10px 10px 0 ;
+    border: var(--Lime);
+}
+
+.as input:hover, .as input:focus{
+    border: 1px solid var(--Lime);
+    border-radius: 10px;
 }
 
 .submit{
@@ -202,6 +224,7 @@ body{
     padding: 0.2rem 1rem;
     width: 100%;
     display: flex;
+    border-radius: 10px;
     background-color: var(--White);
     border: 1px var(--Slate-900) solid;
 }
@@ -213,8 +236,15 @@ body{
 }
 
 .rdIn>p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 700;
+    width: 100%;
+    height: 100%;
+}
+
+.rdIn:hover{
+    background-color: hsl(61, 70%, 52%, 30%);
+    border: var(--Lime) 1px solid;
 }
 
 .result{
