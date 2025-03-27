@@ -27,7 +27,6 @@ body{
     background-color: var(--White);
     border-radius: 10px;
     display: flex;
-    flex-direction: row-reverse;
     width: 700px;
     height: 500px;
 }
