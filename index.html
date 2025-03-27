@@ -9,9 +9,26 @@
 </head>
 <body>
   <div class="container">
-  <div class="form">
-  </div>
-  <div class="result"></div>
+    <div class="form">
+        <h1>Mortgage Calculator</h1>
+        <p>Clear All</p>
+
+        <form action="">
+          <label for="mortageAmount">Mortgage Amount</label>
+          <input type="text" name="mortageAmount" >
+          <span>
+            <label for="mortageTerm">Mortgage Term</label>
+            <input type="text" name="mortageTerm" >
+            <label for="interestRate">Interest Rate</label>
+            <input type="text" name="interestRate" >
+          </span>
+          <label for="mortageType">Mortage Type</label>
+          <span><input type="radio" name="mortageType" > <p>Repayment</p></span>
+          <span><input type="radio" name="mortageType" > <p>Interest Only</p></span>
+          <input type="submit" placeholder="Calculate Repayments"></input>
+        </form>
+    </div>
+    <div class="result"></div>
   </div>
   
    <script defer src="./script.js"></script>
