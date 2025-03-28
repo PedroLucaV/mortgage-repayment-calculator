@@ -61,7 +61,7 @@ body{
     display: flex;
     width: 1000px;
     transition: 0.5s;
-    height: 600px;
+    height: 620px;
     box-shadow: -5px 5px 10px hsla(0, 0%, 0%, 0.307);
 }
 
@@ -131,6 +131,10 @@ body{
     min-width: 3rem;
 }
 
+.error{
+    border: 1px var(--Red) solid !important;
+}
+
 .mA div:hover, .mA>div input:hover~.m, .mA>div input:focus~.m{
     background-color: var(--Lime);
     border-radius: 10px 0 0 10px;
@@ -140,6 +144,17 @@ body{
 .mA>div input:hover, .mA>div input:focus{
     border: 1px solid var(--Lime);
     border-radius: 10px;
+}
+
+.errorToken{
+    background-color: var(--Red) !important;
+    border: 1px var(--Red) solid !important;
+}
+
+.errorM{
+    display: none;
+    color: var(--Red) !important;
+    font-weight: 600;
 }
 
 .mA>div>div>p{
@@ -209,6 +224,7 @@ body{
     border-radius: 50px;
     width: 80%;
     height: 2.5rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
