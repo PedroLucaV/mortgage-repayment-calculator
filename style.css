@@ -60,6 +60,7 @@ body{
     border-radius: 10px;
     display: flex;
     width: 1000px;
+    transition: 0.5s;
     height: 600px;
 }
 
@@ -253,9 +254,14 @@ body{
     border: var(--Lime) 1px solid;
 }
 
-.rdSelect{
+/* OR if input is inside label */
+.rdIn:has(.inp:checked) {
     background-color: hsl(61, 70%, 52%, 30%);
     border: var(--Lime) 1px solid;
+}
+
+.inp {
+    accent-color: var(--Lime); 
 }
 
 .result{
@@ -342,3 +348,80 @@ body{
     color: var(--Lime);
 }
 
+@media screen and (max-width: 1000px){
+    .container{
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        transition: 0.5s;
+    }
+
+    .left{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .result{
+        width: 100%;
+    }
+
+    .submit{
+        width: 100%;
+    }
+
+    .iLS>div{
+        max-width: 100%;
+        width: 48%;
+    }
+
+    .iLS>div>div>input{
+        width: 100%;
+    }
+
+    .iLS{
+        justify-content: space-between;
+    }
+
+    .result{
+        padding: 2rem;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .container{
+        width: 100%;
+    }
+
+    .res{
+        padding: 0;
+    }
+
+    .iLS{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .iLS>div{
+        width: 100%;
+    }
+
+    .iLS>div>div>input{
+        width: 100%;
+    }
+
+    .res .header p{
+    font-size: 0.95rem;
+    font-weight: 200;
+}
+
+.res .header h1{
+    font-size: 1.2rem;
+}
+.containRes>.up h1{
+    font-size: 2.2rem;
+    max-height: 10rem;
+    color: var(--Lime);
+}
+
+}
